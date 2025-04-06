@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet & Mixture Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- navigation bar -->
+     <header class="navigatioheader">
+        <h4 class="logo">Sweet & Mixture </h4>
+        <nav class="nav-list">
+            <ul class="ul-list">
+                <li class="li-list">
+                    <a href="#">home</a>
+                
+                </li>
+                <li class="li-list">
+                    <a href="#">about</a>
+                
+                </li>
+                <li class="li-list">
+                    <a href="#">menus</a>
+                
+                </li>
+                <li class="li-list">
+                    <a href="#">service</a>
+                
+                </li>
+                <li class="li-list">
+                    <a href="#">gallery</a>
+                
+                </li>
+                <li class="li-list">
+                    <a href="#">contact</a>
+                
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      
+        <div class="from" onclick="newopen()">
+            <i class="fas fa-shopping-cart" id="cart-icon"></i>
+            <!-- <button id="form">form</button> -->
+        </div>
+     </header>
+     <div class="serch-menu">
+        <div class="search">
+            <input type="search" placeholder="Search here..." id="menu">
+            <i class="fas fa-search search-icon" id="searchclick"></i>
+         </div>
+     </div>
+         <!-- Shopping Cart Section -->
+         <div class="cart">
+            <div class="cart-title">Cart Items</div>
+            <div class="cart-content">
+                
+                
+
+            </div>
+            
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">Rs.0</div>
+            </div>
+            
+            <button class="btn-buy" onclick="placerder()">Place Order</button>
+            <ion-icon name="close" id="cart-close" >x</ion-icon>
+        </div>
+    </div>
+     <!-- banner-design -->
+      <main>
+        <section class="banner-design">
+            <div class="sweetbanner">
+             <h1>🍬 Loganathan Sweet Shop 🍬</h1>
+             <h1>Traditional Taste, Homemade with Love</h1>
+             <p></p>
+             <h2>🎉 Special Orders for Functions & Festivals Available</h2>
+             <h2>Free Delivery in Local Areas</h2>
+            </div>
+        </section>
+        <!-- about -->
+         <section class="service">
+            <h1 class="about-center">about</h1>
+            <div class="about-sweet about">
+                <div class="abut-pic">
+                    <img src="https://media.istockphoto.com/id/507796111/photo/pakistani-mithai-4.jpg?s=612x612&w=0&k=20&c=9YtvQ9huwpI_zkCH1xEzD12YbiJfiCw-L0aoaPup8Hg=" alt="">
+                </div>
+                <div class="myswwet">
+                    Located in the heart of our village, we specialize in preparing fresh, homemade sweets using traditional recipes. Our services include bulk sweet orders, function sweet preparations, and daily sweet sales. Whether it’s for weddings, festivals, or special occasions, we ensure top-quality sweets with authentic taste.
+
+Our specialties include Ladoo, Jalebi, Mysore Pak, Badusha, and more, made with premium ingredients to maintain freshness and flavor. We take pride in delivering sweets that bring joy to every celebration.
+
+For orders and inquiries, visit our shop or contact us today!
+                </div>
+            </div>
+         </section>
+         <!-- menus in sweetshop -->
+         <section class="sweetmenu">
+            <h1 class="menus">menus</h1>
+            <div class="menus-items">
+              
+               
+
+
+                
+                
+           
+              
+            </div>
+         </section>
+         <section class="gallery">
+            <div class="sweetimage">
+                <div class="switpic"><img src="https://tse1.mm.bing.net/th?id=OIP.6MDgZSzUUvYpSZ1mxA7TRgHaHa&w=474&h=474&c=7" alt="Ladoo"></div>
+                <div class="switpic"><img src="https://tse2.mm.bing.net/th?id=OIP.IFMIL7KsBYbLvKA4dOqVxwHaFj&w=355&h=355&c=7" alt="Jalebi"></div>
+                <div class="switpic"><img src="https://tse2.mm.bing.net/th?id=OIP.Tbb-Ce9c7QkFAfQ7mfEjhwHaKu&w=474&h=474&c=7" alt="Mysore Pak"></div>
+                <div class="switpic"><img src="https://tse2.mm.bing.net/th?id=OIP.9ac-aqCoCOx1ak1lamYe3gHaEK&w=266&h=266&c=7" alt="Badusha"></div>
+                <div class="switpic"><img src="https://tse4.mm.bing.net/th?id=OIP.BcYab7JhaIhqnFB13V_d7gHaIu&w=474&h=474&c=7" alt="Mixed Sweets"></div>
+            </div>
+          </section>
+         <!-- Contact Us -->
+        <section class="contact-us">
+            <h3> Contact Us</h3>
+            <h1>Contact For Any Query</h1>
+            <div class="addrish">
+                <div class="add">
+                    <h3>Address</h3>
+                    <p> Cheyyar - Vandavasi - Polur Road, Mambakkam, Tamil Nadu, India</p>
+                </div>
+                <div class="add">
+                    <h3>Contact Number</h3>
+                    <p>9361562206</p>
+                </div>
+                <div class="add">
+                    <h3>Email</h3>
+                    <p>lprathap381@gmail.com</p>
+                </div>
+            </div>
+            
+    <div class="container">
+        <div class="contact-section">
+            <div class="map-container">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.4315345764267!2d79.39512557358371!3d12.685233071095022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52d300679ee1db%3A0x14955c36d6ab3fda!2sloganathan%20sweetshop!5e0!3m2!1sen!2sin!4v1743522719052!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-form">
+                
+                <form id="formuser">
+                    <div class="form-group">
+                        <label for="username">Name:</label>
+                        <input type="text" id="username" placeholder="Enter your name">
+                        <span class="error" id="error-name"></span>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="useremail">Email:</label>
+                        <input type="email" id="useremail" placeholder="Enter your email">
+                        <span class="error" id="error-email"></span>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="usercontact">Contact:</label>
+                        <input type="text" id="usercontact" placeholder="Enter your phone number">
+                        <span class="error" id="error-contact"></span>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="usermessage">Message:</label>
+                        <textarea id="usermessage" placeholder="Write your message"></textarea>
+                        <span class="error" id="error-message"></span>
+                    </div>
+        
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+            </div>
+        
+        </section>
+        <footer class="footer">
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h4>Contact</h4>
+                <p>📍 Cheyyar - Vandavasi - Polur Road, Mambakkam, Tamil Nadu, India</p>
+                <p>📞 9095743952</p>
+                <p>✉ info@example.com</p>
+            </div>
+            <div >
+                <h4>Opening</h4>
+                <p class="Opening"><strong>Monday - Saturday</strong><br>7:00 AM - 10:00 PM</p>
+                <p><strong>Sunday</strong><br>8:30 AM - 09:30 PM</p>
+            </div>
+            <div>
+                <h4>Social Links</h4>
+                <div class="social-icons">
+                    <a href="#">✖</a>
+                    <a href="#">📘</a>
+                    <a href="#">▶</a>
+                    <a href="#">🔗</a>
+                </div>
+            </div>
+        </footer>
+      </main>
+       <table>
+                            
+                        </table>
+                        <!-- const totalPrice = itemList.reduce((acc, item) => acc + (item.foodPrice * item.quantity), 0); -->
+    
+</body>
+<script src="scripth.js"></script>
+</html>
+
